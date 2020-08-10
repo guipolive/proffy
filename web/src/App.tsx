@@ -1,12 +1,13 @@
 // importando react para podermos usar JSX
 import React from 'react'; 
+import Landing from './pages/Landing';
 
 // importando o css global da aplicação
 import './assets/styles/global.css';
 
 function App() {
     return (
-        <h1>Hello World</h1>
+        <Landing />
     );
 }
 
