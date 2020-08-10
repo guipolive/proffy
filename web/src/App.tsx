@@ -1,4 +1,8 @@
-import React from 'react';
+// importando react para podermos usar JSX
+import React from 'react'; 
+
+// importando o css global da aplicação
+import './assets/styles/global.css';
 
 function App() {
     return (
