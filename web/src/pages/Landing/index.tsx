@@ -8,6 +8,9 @@ import studyIcon from '../../assets/images/icons/study.svg';
 import giveClassesIcon from '../../assets/images/icons/give-classes.svg';
 import purpleHeartIcon from '../../assets/images/icons/purple-heart.svg';
 
+// Importando a estilização
+import './styles.css';
+
 function Landing(){
     return (
         <div id="landing-page">
@@ -31,8 +34,8 @@ function Landing(){
                 </div>
 
                 <span className="total-connections">
-                    <img src={purpleHeartIcon} alt="Coração roxo"/>
                     Já foram realizadas 200 conexões.
+                    <img src={purpleHeartIcon} alt="Coração roxo"/>
                 </span>
             </div>
         </div>
