@@ -1,0 +1,53 @@
+.page-header {
+    /* Deixando os elementos em linha */
+    display: flex;
+    flex-direction: column;
+    
+    /* Usando a cor primária como fundo */
+    background-color: var(--color-primary);
+}
+
+.page-header .top-bar-container {
+    width: 90%;
+    /* Deixa o container dos elementos alinhado ao centro */
+    margin: 0 auto;
+
+    color: var(--color-text-in-primary); /* cor do texto */
+    
+    padding: 1.6rem 0;
+
+    display: flex;
+    /* Joga cada um dos elementos para um lado */
+    justify-content: space-between;
+    align-items: center /* Alinha os itens verticalmente */
+
+}
+
+/* Seta de back no header */
+.page-header .top-bar-container a {
+    height: 3.2rem;
+
+    transition: opacity 0.2s;
+}
+
+.page-header .top-bar-container a:hover {
+    opacity: 0.6;
+}
+
+/* Pegando somente as imagens que estão no primeiro nível da top-bar-container */
+.page-header .top-bar-container > img {
+    height: 1.6rem;
+}
+
+.page-header .header-content {
+    width: 90%;
+    margin: 0 auto; /* Alinhando ao centro horizontalmente */
+    position: relative;
+    margin: 3.2rem auto;
+}
+
+.page-header .header-content strong {
+    font: 700 3.6rem Archivo;
+    line-height: 4.2rem;
+    color: var(--color-title-in-primary);
+}
