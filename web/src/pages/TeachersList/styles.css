@@ -1,0 +1,98 @@
+#teacher-list-page {
+    /* Altura e largura completando a tela inteira */
+    width: 100vw;
+    height: 100vh;
+}
+
+/* Parte da pesquisa */
+#search-teachers {
+    margin-top: 3.2rem;
+}
+
+#search-teachers label {
+    color: var(--color-text-in-primary);
+}
+
+#search-teachers input-block {
+    position: relative;
+}
+
+/* Pegando todos os input-blocks que não são o primeiro */
+#search-teachers .input-block + .input-block {
+    margin-top:1.4rem;
+}
+
+#search-teachers .input-block label {
+    font-size: 1.4rem;
+}
+
+#search-teachers .input-block input {
+    width: 100%;
+    height: 5.6rem;
+    margin-top: 0.8rem;
+    border-radius: 0.8rem; /* Arredondando */
+    background: var(--color-input-background);
+    border: 1px solid var(--color-line-in-white); /* Borda */
+    outline: 0; /* Em volta do item */
+    padding: 0 1.6rem;
+    font: 1.6rem Archivo;
+}
+
+/* #search-teachers .input-block:focus-within::after {
+    width: calc(100% - 3.2rem);
+    height: 2px;
+    content: '';
+    background: var(--color-primary-light);
+    position: absolute;
+    left: 1.6rem;
+    right: 1.6rem;
+    bottom: 0;
+} */
+
+
+
+/* Adaptando para Telas Maiores */
+@media (min-width: 700px) {
+    #teacher-list-page{
+        max-width: 100%;
+    }
+
+    #search-teachers {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr; /* 3 colunas de tamanho igual */
+        column-gap: 16px; /* Distanciamento entre colunas */
+        position: absolute;
+        bottom: -45px;
+    }
+
+    /* Pegando todos os input-blocks que não são o primeiro */
+    #search-teachers .input-block + .input-block {
+        margin-top: 0; /* Desfazendo a margem top */
+    }
+}
+
+@media (min-width: 700px) {
+    .page-header {
+        height: 340px;
+    }
+
+    .page-header .top-bar-container {
+        max-width: 1100px;
+    }
+    
+    .page-header .header-content {
+        flex: 1;
+        max-width: 740px;
+        margin: 0 auto;
+
+        padding-bottom: 48px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .page-header .header-content strong {
+        max-width: 350px;
+    }
+}
